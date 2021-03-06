@@ -7,10 +7,10 @@
 			}
 		},
 		{
-			"path" : "pages/topic/topic",
+			"path" : "pages/encyclopediaTopic/encyclopediaTopic",
 			"style" :                                                                                    
 			{
-					"navigationBarTitleText": "",
+					"navigationBarTitleText": "校园百科",
 					"enablePullDownRefresh": false
 			}
 		},
@@ -31,7 +31,7 @@
 			}
 		}
         ,{
-            "path" : "pages/campusEncyclopedia/campusEncyclopedia",
+            "path" : "pages/encyclopediaList/encyclopediaList",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -43,7 +43,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#FFFF",
 		"backgroundColor": "#F8F8F8"
 	},
 	"condition" : { //模式配置，仅开发期间生效
@@ -69,7 +69,7 @@
 	        "text": "主页"
 	    }, 
 			{
-	        "pagePath": "pages/topic/topic",
+	        "pagePath": "pages/encyclopediaTopic/encyclopediaTopic",
 	        "iconPath": "static/tabbar/tab-topic.png",
 	        "selectedIconPath": "static/tabbar/tab-topic-on.png",
 	        "text": "专题"

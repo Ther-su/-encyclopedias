@@ -1,0 +1,1 @@
+<view><view class="title-box">{{''+title+''}}</view><block wx:for="{{list}}" wx:for-item="item" wx:for-index="__i0__"><view class="item-box"><view class="left"><view class="description-box">{{''+item.description+''}}</view><view class="time-box">{{''+item.time+''}}</view></view><view class="right"><view class="arrow-right"></view></view></view></block></view>

@@ -1,17 +1,20 @@
 <template>
-	<view class="container" v-for="item1 in gradeList">
-		<view class="title">
-			{{item1.title}}
+	<div>
+		<view class="container" v-for="item1 in gradeList">
+			<view class="title">
+				{{item1.title}}
+			</view>
+			
+			<navigator class="item" v-for="item2 in item1.gradeItem" :url="'../encyclopediaList/encyclopediaList?categoryID='+item2.id">
+				<image :src="item2.icon" mode="widthFix"></image>
+				<text class="text-name">{{item2.name}}</text>
+			</navigator>
 		</view>
-		
-		<navigator class="item" v-for="item2 in item1.gradeItem">
-			<image :src="item2.icon" mode="widthFix"></image>
-			<text class="text-name">{{item2.name}}</text>
-		</navigator>
-	</view>
+	</div>
 </template>
 
 <script>
+	import Api from '../../utils/api.js'
 	export default {
 		data() {
 			return {
@@ -82,8 +85,20 @@
 				]
 			}
 		},
+		created() {
+			this.getTopicList()
+		},
 		methods: {
-			
+			getTopicList () {
+				let sort1 = []
+				uni.request({
+					url:Api.getCategories(),
+					method:'GET',
+					success: (res) => {
+						console.log(res)
+					}
+				})
+			}
 		}
 	}
 </script>

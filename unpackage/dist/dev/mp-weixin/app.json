@@ -1,16 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/topic/topic",
+    "pages/encyclopediaTopic/encyclopediaTopic",
     "pages/readlog/readlog",
     "pages/course/course",
-    "pages/campusEncyclopedia/campusEncyclopedia"
+    "pages/encyclopediaList/encyclopediaList"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#FFFF",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
@@ -26,7 +26,7 @@
         "text": "主页"
       },
       {
-        "pagePath": "pages/topic/topic",
+        "pagePath": "pages/encyclopediaTopic/encyclopediaTopic",
         "iconPath": "static/tabbar/tab-topic.png",
         "selectedIconPath": "static/tabbar/tab-topic-on.png",
         "text": "专题"
@@ -45,5 +45,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
